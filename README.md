@@ -26,17 +26,30 @@ https://www.youtube.com/@renato-coelho
 
 ### Ativando ElasticSearch e Kibana
 
+
++ Clonando o repositório:
+
+```bash
+git clone https://github.com/Renatoelho/elasticsearch-primeiros-passos.git elasticsearch-primeiros-passos
+```
+
++ Acessando o repositório:
+
+```bash
+cd elasticsearch-primeiros-passos/
+```
+
++ Ativando os serviços via Docker Compose:
+
 ```bash
 docker compose -p elasticsearch -f docker-compose.yaml up -d
 ```
-
 
 ### Acessando o Dev Tools (Kibana)
 
 [http://localhost:5601/app/dev_tools#/console](http://localhost:5601/app/dev_tools#/console)
 
 > ***Obs.:*** Usuário e senha no arquivo [docker-compose.yaml](docker-compose.yaml).
-
 
 ### Operações no ElasticSearch via Kibana
 
@@ -119,7 +132,6 @@ GET detalhes-vendas/_search
   }
 }
 ```
-
 
 # Referências
 
