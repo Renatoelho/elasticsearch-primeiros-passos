@@ -7,10 +7,8 @@ https://www.youtube.com/@renato-coelho
 -->
 
 # Apresentação em vídeo
++ https://youtu.be/llnqc-2cZfw
 
-<p align="center">
-  <a href="https://youtu.be/llnqc-2cZfw" target="_blank"><img src="thumbnail/ElasticSearchPrimeirosPassos.png" alt="Vídeo de apresentação"></a>
-</p>
 
 
 ### Requisitos
@@ -44,6 +42,18 @@ cd elasticsearch-primeiros-passos/
 ```bash
 docker compose -p elasticsearch -f docker-compose.yaml up -d
 ```
+### Conectando e Acessando Via Python:
+
++ Instalando a biblioteca elasticsearch na sua venv
+````bash
+sudo apt install -y python3-elasticsearch
+````
+````bash
+source venv/bin/activate
+````
+ + Testa a conexão ( script conexao.py)
+>https://github.com/jamessonGIT/elasticsearch-primeiros-passos/blob/jamessonGIT-patch-1/conexao.py
+
 
 ### Acessando o Dev Tools (Kibana)
 
